@@ -100,7 +100,9 @@ label{
    text-align: center;
    color: white;
    font-size: 20px ;
-   box-shadow: ;
+   box-shadow: 2px 2px 2px 1px gray;
+   border: rgba(8, 128, 214, 1);
+  
 }
 
 .container-questions{
@@ -201,11 +203,13 @@ input:checked{
 .btn-quit{
     margin: 4% 6%;
     top: 0px;
-    border-radius: 0px;
+   
     background: rgba(236, 136, 12, 1);
     height: 59px;
     width: 226px;
     color: white;
+    box-shadow: 2px 2px 2px 1px gray;
+    border: rgba(236, 136, 12, 1);;
 }
 .btn-next{
     margin: 4% 6%;
@@ -213,10 +217,10 @@ input:checked{
     height: 59px;
     width: 226px;
     color:white;
-   
-}
+    box-shadow: 2px 2px 2px 1px gray;
+    border:rgba(2, 138, 61, 1);
 
-  
+}
   .container-result{
     box-sizing: border-box;
     display: grid;
@@ -274,4 +278,6 @@ input:checked{
    text-align: center;
    color: white;
    margin-bottom: 35%;
+   box-shadow: 2px 2px 2px 1px gray;
+   border: rgba(8, 128, 214, 1);
 }

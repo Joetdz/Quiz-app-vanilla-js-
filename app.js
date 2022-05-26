@@ -12,6 +12,7 @@ const resultContainer=document.querySelector(".container-result")
 const quiz=document.querySelector(".quiz")
 const formReponses=document.querySelector(".reponses")
 let choixReponse=document.querySelector(".answer-group")
+let choixReponseSelect=document.querySelector("input[type=radio]")
 const spanScore=document.querySelector(".score")
 const quizCounter=document.querySelector(".quiz-count")
 let progressBar=document.querySelector(".rebours")
@@ -74,10 +75,11 @@ form.addEventListener("submit", function(e){
      
     })
     //quand on clique sur une assertion
-    choixReponse.addEventListener("click" , function(){
-      choixReponse.style.border="solid 2px rgba(2, 138, 61, 1);"
-      console.log(choixReponse);
-    })  
+    // choixReponseSelect.addEventListener("click" , function(){
+    //   choixReponse.style.border="solid 2px rgba(2, 138, 61, 1)"
+    //   document.querySelector('input[type=radio]').checked=true
+    //   console.log(choixReponse);
+    // })  
 
     let count=0;
     let rebours=60;
@@ -152,7 +154,6 @@ form.addEventListener("submit", function(e){
 
     // affiche la premiere question
     
-    
     quizCounter.textContent=count+1 +"/"+  questions.length 
     quiz.textContent=questions[count].question
     let choix=questions[count].choix
@@ -169,7 +170,6 @@ form.addEventListener("submit", function(e){
     btnNext.addEventListener("click", function(e){
       e.preventDefault();
      
-      
       //on verifie la reponse choix eton update le score
       if(document.querySelector('input[type=radio]:checked')){
         rebours=60
@@ -233,3 +233,12 @@ form.addEventListener("submit", function(e){
   }
   return
 })
+
+
+function Choix_select(e)
+{
+  e.querySelector('input[type=radio]').checked=true
+  if(e.querySelector('input[type=radio]').checked=true){
+  e.style.border="solid 2px red"
+}
+}
