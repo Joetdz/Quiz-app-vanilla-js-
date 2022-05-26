@@ -236,9 +236,17 @@ form.addEventListener("submit", function(e){
 
 
 function Choix_select(e)
-{
+{ 
+  e.parentNode['reponse'].forEach(element => 
+  {
+    element.parentNode.style.border=""
+  })
+
+
   e.querySelector('input[type=radio]').checked=true
-  if(e.querySelector('input[type=radio]').checked=true){
-  e.style.border="solid 2px red"
-}
+  if (e.querySelector('input[type=radio]:checked')){
+    e.style.border="solid 2px rgba(2, 138, 61, 1)"
+  }else if(choixReponse.querySelector('input[type=radio]').checked=false){
+    e.style.border=" "
+  }
 }
