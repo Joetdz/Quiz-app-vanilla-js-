@@ -133,11 +133,22 @@ label{
    
    
 }
+input[type="radio"] {
+    appearance: none;
+    border: .1em solid #C4C4C4;
+    width: 1.2em;
+    height: 1.2em;
+    border-radius: 50%;
+
+}
 input:checked{
-    accent-color:  rgba(2, 138, 61, 1);
+    background-color: rgba(2, 138, 61, 1);
 }
 .border-susses{
     border: solid 2px rgba(2, 138, 61, 1);;
+}
+input[type="text"]{
+padding:2% ;
 }
 .question{
     display: grid;

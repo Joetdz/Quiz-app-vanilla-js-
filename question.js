@@ -49,7 +49,7 @@ let questions=[
      }
 ]
 questions.sort(() => Math.random() - 0.5) 
-console.log(questions.length);
+
 for(let i=0; i<questions.length; i++){ 
-         console.log(questions[i].choix.sort(() => Math.random() - 0.5));
+        questions[i].choix.sort(() => Math.random() - 0.5);
 }
