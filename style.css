@@ -102,6 +102,7 @@ label{
    font-size: 20px ;
    box-shadow: 2px 2px 2px 1px gray;
    border: rgba(8, 128, 214, 1);
+   font-size: 20px;
   
 }
 
@@ -220,7 +221,8 @@ padding:2% ;
     width: 226px;
     color: white;
     box-shadow: 2px 2px 2px 1px gray;
-    border: rgba(236, 136, 12, 1);;
+    border: rgba(236, 136, 12, 1);
+    font-size: 20px;
 }
 .btn-next{
     margin: 4% 6%;
@@ -230,6 +232,7 @@ padding:2% ;
     color:white;
     box-shadow: 2px 2px 2px 1px gray;
     border:rgba(2, 138, 61, 1);
+    font-size: 20px;
 
 }
   .container-result{
@@ -291,4 +294,5 @@ padding:2% ;
    margin-bottom: 35%;
    box-shadow: 2px 2px 2px 1px gray;
    border: rgba(8, 128, 214, 1);
+   font-size: 20px;
 }

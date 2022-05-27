@@ -59,9 +59,10 @@ form.addEventListener("submit", function(e){
           if(answerSelected==answerTrue){
             playerScore+=1
           } 
+          document.querySelector('input[type=radio]:checked').parentNode.style.border=""
         }
         count+=1
-        document.querySelector('input[type=radio]:checked').parentNode.style.border=""
+        
         rebours=60
         progressBar.remove()
         progressBar=document.createElement('div')
