@@ -62,9 +62,9 @@ form.addEventListener("submit", function(e){
           document.querySelector('input[type=radio]:checked').parentNode.style.border=""
         }
         count+=1
-        
-        rebours=60
         progressBar.remove()
+        rebours=60
+        
         progressBar=document.createElement('div')
         progressBar.classList.add("rebours")
         document.querySelector('.timer').appendChild(progressBar)

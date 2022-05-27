@@ -4,10 +4,14 @@ body{
     margin: 0px;
     padding:0px;
     background-image: linear-gradient(110deg, #c3ffb5 0, #a6ffbe 10%, #88ffc6 20%, #67ffcb 30%, #43ffcd 40%, #0cedcb 50%, #00dac7 60%, #00cac3 70%, #00bcc0 80%, #00b0be 90%, #00a7bd 100%);
+    background-size: 100%r;
+    background-repeat: no-repeat;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     font-family: Inter;
+    
+    height: 100vh
 }
 input[type=text],input[type=email]{
     all: unset;
@@ -25,6 +29,7 @@ input[type=text],input[type=email]{
     width:100%;
 }
 .container-start{
+    position: relative;
     display: grid;
     box-sizing: border-box;
     z-index: 0;
@@ -32,7 +37,7 @@ input[type=text],input[type=email]{
     grid-template-rows: 15% 25% 60%;
     height: 700px;
     width: 600px;
-    margin: 10%;
+    margin: 1%;
     border-radius: 0px;
     background-color: #FFFFFF;
 }
@@ -107,17 +112,18 @@ label{
 }
 
 .container-questions{
-    
+    position: relative;
     box-sizing: border-box;
     display: none;
-    grid-template-rows: 20%  80%;
-    height: 784px;
+    grid-template-rows: 24%  80%;
+    height: 740px;
     width: 600px;
-    margin: 10%;
+    margin-top:1% ;
     opacity: 0;
     border-radius: 0px;
     background-color: #FFFFFF;
     z-index: 10;
+    
     
 }
 .answers{
@@ -213,7 +219,7 @@ padding:2% ;
     }
   }
 .btn-quit{
-    margin: 4% 6%;
+    margin: 1% 6%;
     top: 0px;
    
     background: rgba(236, 136, 12, 1);
@@ -225,7 +231,7 @@ padding:2% ;
     font-size: 20px;
 }
 .btn-next{
-    margin: 4% 6%;
+    margin: 1% 6%;
     background: rgba(2, 138, 61, 1);
     height: 59px;
     width: 226px;
@@ -239,9 +245,9 @@ padding:2% ;
     box-sizing: border-box;
     display: grid;
     grid-template-rows: 20% 50% 30%;
-    height: 784px;
+    height: 700px;
     width: 600px;
-    margin: 10%;
+    margin: 1% ;
     display: none;
     opacity: 0;
     border-radius: 0px;
