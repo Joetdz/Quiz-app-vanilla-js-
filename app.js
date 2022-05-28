@@ -60,6 +60,8 @@ form.addEventListener("submit", function(e){
             playerScore+=1
           } 
           document.querySelector('input[type=radio]:checked').parentNode.style.border=""
+        }else{
+          
         }
         count+=1
         progressBar.remove()
@@ -74,7 +76,7 @@ form.addEventListener("submit", function(e){
         document.querySelector('.count-time').textContent=rebours
 
         if(count<questions.length){ 
-          quizCounter.textContent=count+1 +"/"+  questions.length 
+          quizCounter.textContent="Question"+" "+count+1 +"/"+  questions.length 
           quiz.textContent=questions[count].question
           let choix=questions[count].choix
           //on appel la fonction qui affiche les assertions de la question
@@ -101,7 +103,7 @@ form.addEventListener("submit", function(e){
     let compteur = setInterval(timer, 1000)
 
     // affiche la premiere question
-    quizCounter.textContent=count+1 +"/"+  questions.length 
+    quizCounter.textContent="Question"+" "+count+1 +"/"+  questions.length
     quiz.textContent=questions[count].question
     let choix=questions[count].choix
     
@@ -128,7 +130,7 @@ form.addEventListener("submit", function(e){
         } 
       
         if(count<questions.length){ 
-        quizCounter.textContent=count+1 +"/"+  questions.length
+        quizCounter.textContent="Question"+count+1 +"/"+  questions.length
         choix=questions[count].choix
         quiz.textContent=questions[count].question
         affichage_assertions(choix) 
