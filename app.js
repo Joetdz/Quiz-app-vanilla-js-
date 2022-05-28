@@ -103,7 +103,8 @@ form.addEventListener("submit", function(e){
     let compteur = setInterval(timer, 1000)
 
     // affiche la premiere question
-    quizCounter.textContent="Question"+" "+count+1 +"/"+  questions.length
+    
+    quizCounter.textContent= count+1 +"/"+  questions.length
     quiz.textContent=questions[count].question
     let choix=questions[count].choix
     
@@ -130,7 +131,7 @@ form.addEventListener("submit", function(e){
         } 
       
         if(count<questions.length){ 
-        quizCounter.textContent="Question"+count+1 +"/"+  questions.length
+        quizCounter.textContent="Question"+count +"/"+  questions.length
         choix=questions[count].choix
         quiz.textContent=questions[count].question
         affichage_assertions(choix) 

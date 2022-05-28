@@ -46,14 +46,6 @@ let questions=[
                 "à comparer 2 pointeurs",
                 "c'est un comparateur logique",
         ]
-<<<<<<< HEAD
-     }
-]
-questions.sort(() => Math.random() - 0.5) 
-console.log(questions.length);
-for(let i=0; i<questions.length; i++){ 
-         console.log(questions[i].choix.sort(() => Math.random() - 0.5));
-=======
      },
      {
         num:5,
@@ -190,5 +182,4 @@ for(let i=0; i<questions.length; i++){
 questions.sort(() => Math.random() - 0.5) 
 for(let i=0; i<questions.length; i++){ 
         questions[i].choix.sort(() => Math.random() - 0.5);
->>>>>>> develop
 }
