@@ -1,0 +1,70 @@
+@media screen and (max-width:799px){
+    .container-start{
+       height: 537px;
+       width: 365px;
+       margin: 3%;
+       grid-template-rows: 10% 25% 70%;
+   } 
+   .description p{
+       font-size: 14px;
+       padding: 10%;
+       line-height: 21.5px;
+   }
+   .input[type=text],input[type=email],.answer-group{
+    height: 25px;
+    font-size: 12px;
+   }
+   .btn-start{
+       height: 40px;
+       width:150px;
+   }
+   .error-name , .error-mail{
+       font-size: 10px;
+   }
+.container-questions{
+    grid-template-rows: 24%  76%;
+    height: 537px;
+    width: 365px;
+    margin: 3%;
+
+}
+.quiz {
+    text-align: center;
+    font-size: 14px;
+}
+.answers{
+    box-sizing: border-box;
+    width: 80%;
+}
+.question{
+    position: relative;
+    display: grid;
+    grid-template-columns: 80%;
+    padding: 6%; 
+    margin: 2% 0;
+    gap: 1em;
+}
+
+.timer{
+    
+    height: 10px;
+    width: 315px;
+    border-radius: 10px;
+}
+.btn-quit ,.btn-next{
+    height: 40px;
+   
+    font-size: 18px
+}
+.container-result{
+    height: 537px;
+    width: 365px;
+    margin: 3%;
+}
+.result{
+    
+ padding:19%;
+  
+  
+}
+}   

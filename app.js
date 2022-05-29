@@ -46,7 +46,7 @@ form.addEventListener("submit", function(e){
       e.preventDefault();
       document.location.reload(true);
     })
-   
+  
     function timer(){
       if(rebours>0){
         rebours-=1;
@@ -76,7 +76,7 @@ form.addEventListener("submit", function(e){
         document.querySelector('.count-time').textContent=rebours
 
         if(count<questions.length){ 
-          quizCounter.textContent="Question"+" "+count+1 +"/"+  questions.length 
+          quizCounter.textContent= count+1  +"/"+questions.length 
           quiz.textContent=questions[count].question
           let choix=questions[count].choix
           //on appel la fonction qui affiche les assertions de la question
@@ -89,7 +89,7 @@ form.addEventListener("submit", function(e){
           if(playerScore >=questions.length/2){
             iconesResultat.classList.remove("fa-circle-xmark")
             iconesResultat.classList.add("fa-circle-check")
-                console.log(iconesResultat);
+               
           }
           spanScore.textContent=playerScore +"/"+  questions.length 
           btnHome.addEventListener("click", function(e){
@@ -131,7 +131,7 @@ form.addEventListener("submit", function(e){
         } 
       
         if(count<questions.length){ 
-        quizCounter.textContent="Question"+count +"/"+  questions.length
+        quizCounter.textContent=count+1 +"/"+  questions.length
         choix=questions[count].choix
         quiz.textContent=questions[count].question
         affichage_assertions(choix) 
@@ -159,8 +159,6 @@ form.addEventListener("submit", function(e){
 })
 
  
- 
-
 
 
  //MES FONCTIONS
@@ -169,16 +167,17 @@ form.addEventListener("submit", function(e){
     
 function Choix_select(e){ 
   border_reinit(e.parentNode['reponse'])
-
+ 
   e.querySelector('input[type=radio]').checked=true
   if (e.querySelector('input[type=radio]:checked')){
     e.style.border="solid 2px rgba(2, 138, 61, 1)"
+    btnNext.style.background="#028A3D"
   }
 
   btnNext.addEventListener('click', function(){
    e.querySelector('input[type=radio]').checked=false
     border_reinit(e.parentNode['reponse'])
-    
+    btnNext.style.background=" rgba(2, 138, 61, 0.42) "
   })
 
   if(rebours==0){

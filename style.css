@@ -4,7 +4,7 @@ body{
     margin: 0px;
     padding:0px;
     background-image: linear-gradient(110deg, #c3ffb5 0, #a6ffbe 10%, #88ffc6 20%, #67ffcb 30%, #43ffcd 40%, #0cedcb 50%, #00dac7 60%, #00cac3 70%, #00bcc0 80%, #00b0be 90%, #00a7bd 100%);
-    backgrou
+    
     box-sizing: border-box;
     display: flex;
     justify-content: center;
@@ -36,7 +36,7 @@ input[type=text],input[type=email]{
     opacity: 1;
     grid-template-rows: 10% 20% 70%;
     height: 600px;
-    width: 524px;
+    width: 466px;
     margin: 1%;
     background-color: #FFFFFF;
 }
@@ -54,10 +54,10 @@ input[type=text],input[type=email]{
 
 .description p{
     text-align: center;
-    padding: 2% 12% ;
-    font-size: 20px;
+    padding: 2% 11% ;
+    font-size: 18px;
     line-height: 31.5px;
-    width: 80%;
+    width: 81%;
     color:  rgba(85, 85, 85, 1);
     font-family: Inter;
 
@@ -117,8 +117,8 @@ label{
     box-sizing: border-box;
     display: none;
     grid-template-rows: 20%  80%;
-    height: 589;
-    width: 502px;
+    height: 622;
+    width: 500px;
     margin: 1%;
     opacity: 0;
     border-radius: 0px;
@@ -130,6 +130,7 @@ label{
 }
 .answers{
     box-sizing: border-box;
+    width: 100%;
 }
 .answer-group{
     position: relative;
@@ -171,6 +172,7 @@ padding:2% ;
 .count{
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
 }
 .timer{
     box-sizing: border-box;
@@ -232,7 +234,7 @@ padding:2% ;
 }
 .btn-next{
     margin: 1% 6%;
-    background: rgba(2, 138, 61, 1);
+    background: rgba(2, 138, 61, 0.42);
     height: 59px;
     width: 226px;
     color:white;
@@ -246,7 +248,7 @@ padding:2% ;
     display: grid;
     grid-template-rows: 20% 50% 30%;
     height: 600px;
-    width: 524px;
+    width: 450px;
     margin: 1%;
     display: none;
     opacity: 0;
@@ -256,11 +258,11 @@ padding:2% ;
   }
   .player{
       position: relative;
-      margin: 20%;
+      margin: 10%;
      text-align: center;
   }
   .player-name{
-     
+     margin: 8%;
       font-size: 40px;
   }
   .player-mail{
