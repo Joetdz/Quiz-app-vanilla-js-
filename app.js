@@ -44,7 +44,20 @@ form.addEventListener("submit", function(e){
     // on recharge la page si on clique le le btn quit
     btnQuit.addEventListener('click', function(e){
       e.preventDefault();
-      document.location.reload(true);
+      affichage_Container(questionContainer,resultContainer )
+
+      // verifie si le score depasse la moitié de la ail du tableau des questions
+      if(playerScore >=questions.length/2){
+         iconesResultat.classList.remove("fa-circle-xmark")
+         iconesResultat.classList.add("fa-circle-check")
+         console.log(iconesResultat);
+       }
+       spanScore.textContent=playerScore +"/"+  questions.length 
+
+       btnHome.addEventListener("click", function(e){
+       e.preventDefault();
+       document.location.reload(true);
+       })
     })
   
     function timer(){

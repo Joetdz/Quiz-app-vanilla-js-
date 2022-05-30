@@ -63,8 +63,11 @@ input[type=text],input[type=email]{
 
 
 }
-
+form{
+    box-sizing: border-box;
+}
 .register{
+    box-sizing: border-box;
     display: grid;
     grid-template-rows:  100%;
     margin:4%;  
@@ -102,10 +105,10 @@ label{
     background: rgba(2, 138, 61, 1);
     margin: 4% 25%;
     height: 59px;
-    width: 226px;
+    width: 40%;
    text-align: center;
    color: white;
-   font-size: 20px ;
+   font-size: 18px ;
    box-shadow: 2px 2px 2px 1px gray;
    border: rgba(8, 128, 214, 1);
    font-size: 20px;
@@ -117,23 +120,24 @@ label{
     box-sizing: border-box;
     display: none;
     grid-template-rows: 20%  80%;
-    height: 622;
+    height: 600px;
     width: 500px;
     margin: 1%;
     opacity: 0;
     border-radius: 0px;
     background-color: #FFFFFF;
     z-index: 10;
-    gap:2%
+    gap:1%;
+    padding-top: 1%;
     
     
 }
 .answers{
     box-sizing: border-box;
-    width: 100%;
+    width: 500%px;
 }
 .answer-group{
-    position: relative;
+    
     display: flex;
    margin: 6%;
    width: 84%;
@@ -226,21 +230,21 @@ padding:2% ;
    
     background: rgba(236, 136, 12, 1);
     height: 59px;
-    width: 226px;
+    width:35%;
     color: white;
     box-shadow: 2px 2px 2px 1px gray;
     border: rgba(236, 136, 12, 1);
-    font-size: 20px;
+    font-size: 18px;
 }
 .btn-next{
     margin: 1% 6%;
     background: rgba(2, 138, 61, 0.42);
     height: 59px;
-    width: 226px;
+    width: 35%;
     color:white;
     box-shadow: 2px 2px 2px 1px gray;
     border:rgba(2, 138, 61, 1);
-    font-size: 20px;
+    font-size: 18px;
 
 }
   .container-result{
