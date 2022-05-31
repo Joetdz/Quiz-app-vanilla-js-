@@ -3,12 +3,15 @@ const btnStart = document.querySelector(".btn-start");
 const btnNext = document.querySelector(".btn-next");
 const btnQuit = document.querySelector(".btn-quit");
 const btnHome = document.querySelector(".btn-home");
+//TODO retrieve dynamically input fields
 const playerName = document.querySelector(".player-name");
 const playerMail = document.querySelector(".player-mail");
-const home = document.querySelector(".container-start");
+
+const startContainer = document.querySelector(".container-start");
 const questionContainer = document.querySelector(".container-questions");
 const resultContainer = document.querySelector(".container-result");
-const quiz = document.querySelector(".quiz");
+
+const questionLabel = document.querySelector(".question-label");
 const formReponses = document.querySelector(".reponses");
 let choixReponse = document.querySelector(".answer-group");
 let choixReponseSelect = document.querySelector("input[type=radio]");
@@ -36,7 +39,7 @@ form.addEventListener("submit", function (e) {
   validation(nom, mail);
   //s'il n'ya pas d'erreur on affiche le conteneur des question
   if (errorsnom == false && errorsmail == false) {
-    affichage_Container(home, questionContainer);
+    affichage_Container(startContainer, questionContainer);
     playerName.textContent = nom;
     playerMail.textContent = mail;
 
@@ -91,7 +94,7 @@ form.addEventListener("submit", function (e) {
 
         if (count < questions.length) {
           quizCounter.textContent = count + 1 + "/" + questions.length;
-          quiz.textContent = questions[count].question;
+          questionLabel.textContent = questions[count].question;
           let choix = questions[count].choix;
           //on appel la fonction qui affiche les assertions de la question
           affichage_assertions(choix);
@@ -117,7 +120,7 @@ form.addEventListener("submit", function (e) {
     // affiche la premiere question
 
     quizCounter.textContent = count + 1 + "/" + questions.length;
-    quiz.textContent = questions[count].question;
+    questionLabel.textContent = questions[count].question;
     let choix = questions[count].choix;
 
     affichage_assertions(choix);
@@ -147,7 +150,7 @@ form.addEventListener("submit", function (e) {
         if (count < questions.length) {
           quizCounter.textContent = count + 1 + "/" + questions.length;
           choix = questions[count].choix;
-          quiz.textContent = questions[count].question;
+          questionLabel.textContent = questions[count].question;
           affichage_assertions(choix);
         } else {
           affichage_Container(questionContainer, resultContainer);
