@@ -117,7 +117,7 @@ function border_reinit(param) {
   });
 }
 
-// on cree une fonction pour la validation des mail et du nom
+
 
 // affichage des quatres  assertion disponible pour chaque question
 
@@ -173,6 +173,10 @@ btnNext.addEventListener("click", function (e) {
     answerTrue = questions[count - 1].reponse;
     if (answerSelected == answerTrue) {
       playerScore += 1;
+    }
+    
+    if(count+1==questions.length){
+      btnNext.textContent="Teminer"
     }
 
     if (count < questions.length) {

@@ -25,7 +25,7 @@ let questions = [
   },
   {
     num: 4,
-    question: "CA quoi sert l'opérateur #= ?",
+    question: "A quoi sert l'opérateur #= ?",
     reponse: "n'existe pas en JavaScript",
     choix: [
       " à comparer le type et la valeur de 2 données",
@@ -62,7 +62,7 @@ let questions = [
     num: 8,
     question: "alert(!(1&&0)?'VRAI':'FAUX'); affiche",
     reponse: "VRAI",
-    choix: [" VRAI", "FAUX", "une erreur", "VRAI:FAUX"],
+    choix: [" VRAI", "FAUX", "une erreur", "VRAI:FAUX"n'],
   },
 
   {
@@ -83,7 +83,7 @@ let questions = [
     num: 11,
     question: "Avec quoi peut-on faire référence à l'objet courant ?",
     reponse: "this",
-    choix: [" this", "->", "&", "le point"],
+    choix: [" this", "->", "&", "le point"],n'
   },
 
   {
