@@ -27,6 +27,7 @@ let answerTrue = 0;
 let answerSelected = 0;
 let count = 0;
 let rebours = 60;
+
 let playerScore = 0;
 
 function validate(name, email) {
@@ -67,7 +68,7 @@ function hideElement(element) {
 
 function handleFormSubmit(e) {
   e.preventDefault();
-
+  
   const playerName = form.querySelector("#name").value;
   const playerEmail = form.querySelector("#mail").value;
 
@@ -78,7 +79,7 @@ function handleFormSubmit(e) {
     showElement(questionContainer);
     playerNameContainer.textContent = playerName;
     playerMailContainer.textContent = playerEmail;
-
+    let compteur = setInterval(timer, 1000);
     quizCounter.textContent = count + 1 + "/" + questions.length;
     questionLabel.textContent = questions[count].question;
     let choix = questions[count].choix;
@@ -108,6 +109,7 @@ function Choix_select(e) {
   if (rebours == 0) {
     e.querySelector("input[type=radio]").checked = false;
     border_reinit(e.parentNode["reponse"]);
+    btnNext.style.background = " rgba(2, 138, 61, 0.42) ";
   }
 }
 
@@ -209,16 +211,13 @@ function timer() {
     document.querySelector(".count-time").textContent = rebours;
   } else if (rebours == 0) {
     if (document.querySelector("input[type=radio]:checked")) {
-      answerSelected = document.querySelector(
-        "input[type=radio]:checked"
-      ).value;
+      answerSelected = document.querySelector("input[type=radio]:checked").value;
       answerTrue = questions[count].reponse;
       if (answerSelected == answerTrue) {
         playerScore += 1;
       }
-      document.querySelector(
-        "input[type=radio]:checked"
-      ).parentNode.style.border = "";
+      document.querySelector("input[type=radio]:checked").parentNode.style.border = "";
+      btnNext.style.background = " rgba(2, 138, 61, 0.42) ";
     } else {
     }
     count += 1;
@@ -258,4 +257,4 @@ function timer() {
   return rebours;
 }
 
-let compteur = setInterval(timer, 1000);
+
