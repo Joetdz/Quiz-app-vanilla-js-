@@ -62,7 +62,7 @@ let questions = [
     num: 8,
     question: "alert(!(1&&0)?'VRAI':'FAUX'); affiche",
     reponse: "VRAI",
-    choix: [" VRAI", "FAUX", "une erreur", "VRAI:FAUX"n'],
+    choix: [" VRAI", "FAUX", "une erreur", "VRAI:FAUX"],
   },
 
   {
@@ -83,7 +83,7 @@ let questions = [
     num: 11,
     question: "Avec quoi peut-on faire référence à l'objet courant ?",
     reponse: "this",
-    choix: [" this", "->", "&", "le point"],n'
+    choix: [" this", "->", "&", "le point"],
   },
 
   {

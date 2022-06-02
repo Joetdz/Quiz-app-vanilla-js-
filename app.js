@@ -176,9 +176,8 @@ btnNext.addEventListener("click", function (e) {
     }
     
     if(count+1==questions.length){
-      btnNext.textContent="Teminer"
+      btnNext.textContent="Terminer"
     }
-
     if (count < questions.length) {
       quizCounter.textContent = count + 1 + "/" + questions.length;
       choix = questions[count].choix;
